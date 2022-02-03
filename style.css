@@ -1,0 +1,87 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: popins;
+}
+:root{
+    --shadow-1 : 0 .125rem .25rem rgba(0,0,0,.075);
+    --shadow-2 : 0 .5rem 1rem rgba(0,0,0,.15);
+    --shadow-3 : 0 1rem 3rem rgba(0,0,0,.175);
+}
+a,
+a:hover{
+    text-decoration: none;
+    color: #000;
+    font-size: 23px;
+}
+.banner{
+    background-image:linear-gradient(rgba(168, 100, 100, 0.5),rgba(0, 0, 0, 0.5)), url('https://t2conline.com/wp-content/uploads/2021/11/enterprise.jpeg');
+    background-size: cover;
+    background-position: 11% center;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.samad{
+    text-align: center;
+    width: 500px;
+    font-weight: 600;
+}
+.samad h4 {
+    color: #fff;
+    font-size: 50px;
+}
+
+.samad p{
+    color: #fff;
+    font-size: 25px;
+}
+.samad a{
+    font-size: 26px !important;
+    display: inline-block;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: var(--shadow-2);
+}
+
+ /* modal css */
+
+ .samad-modal{
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(252, 246, 246, 0.6) ;
+     justify-content: center;
+     align-items: center;
+     display: flex;
+     transform: translateY(-130px);
+     transition:all 0.4s ease-in-out;
+     opacity: 0;
+     pointer-events: none;
+
+ }
+
+ .samad-modal.active{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0px);
+ }
+
+ .samad-modal .modal_contant{
+     background-color: #fff;
+     width: 500px;
+     height: auto;
+     border-radius: 10px;
+     padding: 15px 10px;
+     box-shadow: var(--shadow-3)
+ };
+
+ .close{
+     border: none;
+     background-color: transparent;
+ }
