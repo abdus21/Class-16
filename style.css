@@ -54,7 +54,7 @@ a:hover{
      top: 0;
      left: 0;
      width: 100%;
-     height: 100%;
+     height: 90%;
      background-color: rgba(252, 246, 246, 0.6) ;
      justify-content: center;
      align-items: center;
@@ -91,7 +91,7 @@ a:hover{
      top: 0;
      left: 0;
      width: 100%;
-     height: 100%;
+     height: 90%;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -128,3 +128,44 @@ a:hover{
      font-size: 18px;
      border-radius: 10px;
  }
+
+
+/* samad-accordion */
+
+.accordion-item{
+    width: 600px;
+    padding: 10px;
+}
+
+.accordion-item .accordion-header{
+    border-bottom: 1px solid rgb(216, 211, 211);
+    cursor: pointer;
+    position: relative;
+}
+.accordion-item .accordion-header::after{
+    content: "\f078";
+    font-weight: 600;
+    font-family: 'Font Awesome 5 Free';
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    transition: all .4s;
+}
+
+.accordion-item .accordion-header.active-accordion::after {
+    transform: rotate(-180deg);
+}
+
+.accordion-item .accordion-body{
+
+    height: 0;
+    overflow: hidden;
+    transition: .3s;
+}
+.accordion-item .accordion-body .accordion-body-content{
+    padding: 20px;
+}
+
+.accordion3{
+    border: 1px solid #D8DADF;
+}

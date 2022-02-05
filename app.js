@@ -1,4 +1,5 @@
 
+//Banner Design with  Modal with custom alert
 
 const apply = document.querySelector('#apply');
 const samad_modal = document.querySelector('.samad-modal');
