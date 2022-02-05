@@ -141,6 +141,11 @@ a:hover{
     border-bottom: 1px solid rgb(216, 211, 211);
     cursor: pointer;
     position: relative;
+    padding: 10px;
+}
+.accordion-item .accordion-header.active-accordion{
+    background-color: #e7f1ff;
+
 }
 .accordion-item .accordion-header::after{
     content: "\f078";
