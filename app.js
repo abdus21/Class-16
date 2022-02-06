@@ -1,14 +1,14 @@
 
-//Banner Design with  Modal with custom alert
+//Banner Design with  Modal & custom alert
 
 const apply = document.querySelector('#apply');
-const samad_modal = document.querySelector('.samad-modal');
-const mclose = document.querySelector('.modal-header .close');
+const samad_modal = document.querySelector('.custom_alert');
+const mclose = document.querySelector('.custom_alert-header .close');
 const aclose = document.querySelector('.alert-header .close');
-const modal_contant = document.querySelector('.modal_contant');
+const modal_contant = document.querySelector('.custom_alert_contant');
 const samad_alert = document.querySelector('.samad-alert');
-const Editing = document.querySelector('.samad-alert .samad-alert-content .btns a:nth-child(1)')
-const discard = document.querySelector('.samad-alert .samad-alert-content .btns a:nth-child(2)')
+const Editing = document.querySelector('.samad-alert .samad-alert-content .btns a:nth-child(1)');
+const discard = document.querySelector('.samad-alert .samad-alert-content .btns a:nth-child(2)');
 
 apply.addEventListener('click', function(e){
     e.preventDefault();
@@ -46,4 +46,6 @@ Editing.addEventListener('click', function(){
 discard.addEventListener('click', function(){
     samad_alert.style.display = 'none'
     samad_modal.classList.remove('active')
-})
+});
+
+
